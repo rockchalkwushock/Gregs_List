@@ -37,24 +37,24 @@ ul
 
 }
 
+.searchBar input
+{
+	width: 90%;
+	height: 40px;
+}
 
 /* ---------- Page Toggle CSS ------------ */
 
-.pageToggle span
+.pageToggle
 {
+	border: 1px solid black;
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-left: 100px;
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
-}
-
-.pageToggle button
-{
-	display: inline-block;
-	margin-top: 30px;
-	margin-left: 100px;
-	font-size: 18px;
+	width: 35%;
+	padding: 10px;
 }
 
 /* ---------- Content CSS ------------ */
@@ -62,7 +62,7 @@ ul
 .content
 {
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-left: 100px;
 	font-size: 18px;
 }
