@@ -1,13 +1,37 @@
-/* ---------- Navigation Bar CSS ------------ */
+/* Table of Contents
 
-.navbar-header a
+	1) Parent Element
+	2) Navigation Bar
+	3) Search Bar
+	4) Page Toggle
+	5) Content
+
+	### Unresolved Issues (13July2016, CAB) ###
+
+	1) Responsive Page causes Search Bar, Page Toggle, & Content to collapse on itself.
+	2) Responsive NavBar Button has issues with Post/Account being 'position: absolute'. Elements drop down from right hand side and break page.
+	3) Cannot get .fa-star-o to fill to solid grey. 
+	4) Unable to fix formatting of Page Toggle to desgin specifications.
+	5) Unsure why NavBar CSS is unresponsive unless '!important' is used.
+*/
+
+
+/* ---------- Parent Element ------------ */
+/* Anything present in the element will be the primary styling unless specified in a child element. */
+
+body
 {
 	font-size: 22px;
+	margin: 0px;
 }
+
+
+/* ---------- Navigation Bar ------------ */
 
 .navbar-brand
 {
 	color: black !important;
+	font-size: 22px !important;
 }
 
 ul
@@ -22,11 +46,7 @@ ul
 	color: purple !important;
 }
 
-
-
-
-
-/* ---------- Search Bar CSS ------------ */
+/* ---------- Search Bar ------------ */
 
 .searchBar
 {
@@ -43,7 +63,7 @@ ul
 	height: 40px;
 }
 
-/* ---------- Page Toggle CSS ------------ */
+/* ---------- Page Toggle ------------ */
 
 .pageToggle
 {
@@ -51,20 +71,18 @@ ul
 	display: inline-block;
 	margin-top: 60px;
 	margin-left: 100px;
-	font-size: 22px;
 	text-align: center;
 	width: 35%;
 	padding: 10px;
 }
 
-/* ---------- Content CSS ------------ */
+/* ---------- Content ------------ */
 
 .content
 {
 	display: inline-block;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 100px;
-	font-size: 18px;
 }
 
 .content a
@@ -75,7 +93,7 @@ ul
 
 .fa-star-o
 {
-	/*Trying to figure out how to get the stars to be colored solid grey */
+	/*Trying to figure out how to get the stars to be filled in solid grey */
 }
 
 .fa-star-o:hover
