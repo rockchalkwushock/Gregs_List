@@ -9,16 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- Main.css -->
-	<link rel="stylesheet" type="text/css" href="gregslist_main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<!-- Navigation Bar Code -->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-
 			<!-- Greg's List Logo -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
@@ -30,32 +31,26 @@
                 </button>
                 <a href="gregslist.html" class="navbar-brand">Greg's List</a>
 			</div>
-
 			<!-- Menu Items -->
-               		<div class="collapse navbar-collapse" id="mainNavBar">
+            <div class="collapse navbar-collapse" id="mainNavBar">
 
-                    		<ul class="nav navbar-nav">
+           		<ul class="nav navbar-nav navbar-right">
 
-                	        <li><a href="#">Post</a></li>
-                        	<li><a href="#">Account</a></li>
+             	    <li><a href="#">Post</a></li>
+                   	<li><a href="#">Account</a></li>
 
-                    		</ul>
-
-               		 </div>
-			
+           		</ul>
+           	</div>
 		</div>
-		
 	</nav>
-
 	<main>
-		
-		<div class="container-fluid ">
+		<div class="container-fluid">
 			<!-- Search Bar Code -->
-			<div class="row">
+			<div class="search">
 
 				<form class="searchBar">
 
-					<input type="search" placeholder="Search Software Jobs">
+					<input type="search" placeholder=" Search software jobs ">
 
 					<button type="button" class="searchButton" data-toggle="" data-target="">
 
@@ -63,35 +58,50 @@
 
                 	</button>
 				</form>
-			
 			</div>
-
 			<!-- Page Toggle Code -->
-			<div class="row">
+			<div class="toggle">
 
-				<div class="pageToggle">
+				<div class="pageToggle" id="pagination">
 
-					<button type="button" class="prevButton" data-toggle="" data-target="">
+					<ul class="pagination">
 
-                    	<span class="prevToggle"> < prev </span>
+    					<li class="previous">
 
-                	</button>
-					
-					<span class="pages"> 1 to 100 of 179 </span>
-					
-					<button type="button" class="nextButton" data-toggle="" data-target="">
+      						<a href="#" aria-label="Previous">
 
-                    	<span class="nextToggle"> next > </span>
+        						<span aria-hidden="true"> < prev </span>
 
-                	</button>
+      						</a>
+
+    					</li>
+
+				   		<li class="pages">
+
+				   			<a href="#">
+
+				   				<span aria-hidden="true"> 1 to 100 of 179 </span>  
+
+				   			</a>
+
+				   		</li>
+
+				    	<li class="next">
+
+				      		<a href="#" aria-label="Next">
+
+       							<span aria-hidden="true"> next > </span>
+
+     						</a>
+
+  						</li>
+
+ 				 	</ul>
 
 				</div>
-
 			</div>
-
 			<!-- Content Code -->
-			<div class="row">
-
+			<div class="jobcontent">
 				<section class="content">
 
 					<div class="jobs">
@@ -101,15 +111,9 @@
 						<p> <span class="fa fa-star-o" aria-hidden="true"></span> June 22 <a href="#">Senior Python Developer / Cofounder</a> Flatiron </p>
 
 					</div>
-
 				</section>
-
 			</div>
-
 		</div>
-
 	</main>
-
 </body>
-
 </html>

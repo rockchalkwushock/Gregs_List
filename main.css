@@ -1,0 +1,149 @@
+/* Table of Contents
+
+	1) Parent Element
+	2) Navigation Bar
+	3) Container
+	4) Search Bar
+	5) Page Toggle
+	6) Content
+
+	### Unresolved Issues (17July2016, CAB) ###
+
+	1) Still have responsive issues that need to be fixed when resizing screen.
+
+*/
+
+
+/* ---------- Parent Element ------------ */
+/* Anything present in the element will be the primary styling unless specified in a child element. */
+
+body
+{
+	font-size: 22px;
+	margin: 0px;
+}
+
+/* ---------- Navigation Bar ------------ */
+
+.navbar-brand
+{
+	color: black !important;
+	font-size: 22px !important;
+}
+
+.navbar-nav a
+{
+	font-size: 22px !important;
+	color: purple !important;
+}
+
+#mainNavBar ul
+{
+	right: 10px;
+}
+
+/* ---------- Container ------------ */
+
+main
+{
+	margin-left: 100px;
+}
+
+/* ---------- Search Bar ------------ */
+
+.searchBar
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 50%;
+	height: 20px;
+}
+
+.searchBar input
+{
+	width: 90%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+
+.fa-search
+{
+	width: 20px;
+	height: 20px;
+}
+
+button
+{
+	border-radius: 5px;
+	background: none;
+	border: 1px solid lightgrey;
+}
+
+/* ---------- Page Toggle ------------ */
+
+.previous span
+{
+	width: 20%;
+	text-align: left;
+	background: none;
+	border: none;
+	color: black;
+}
+
+.pages span
+{
+	width: 50%;
+	text-align: center;
+	color: black;
+}
+
+.next span
+{
+	width: 20%;
+	text-align: right;
+	background: none;
+	border: none;
+	color: black;
+}
+
+/* ---------- Content ------------ */
+
+.content
+{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.content a
+{
+	font-weight: bold !important;
+	color: blue;
+}
+
+.fa-star-o
+{
+	/*Trying to figure out how to get the stars to be filled in solid grey */
+}
+
+.fa-star-o:hover
+{
+	color: yellow;
+}
+
+.jobs
+{
+	display: block;
+}
+
+.jobs p
+{
+	color: grey;
+}
+
+/* ---------- Media Queries ------------ */
+
+@media screen and (max-width: 480px)
+{
+	
+}
